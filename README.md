@@ -1,4 +1,12 @@
-# UPI-Fraud-detectionimport pickle
+# UPI-Fraud-detection
+import pickle
+
+# File path for saving the pickle file
+pickle_file_path = "UPI Fraud Detection updated.pkl"
+
+# Save the trained XGBoost model to a pickle file
+with open(pickle_file_path, 'wb') as file:
+    pickle.dump(XGBoost_model, file)
 
 
 
